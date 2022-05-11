@@ -1,1 +1,1 @@
-# CURL: Continuous, Ultra-compact Representation for LiDAR
+# CURL: Continuous, Ultra-compact Representation for LiDAR 
