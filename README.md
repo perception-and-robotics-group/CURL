@@ -13,7 +13,7 @@ We designed a framework that can compress and increase the LiDAR point cloud at 
 <img src="images/example.gif" alt="Example" width=80%/> 
 </p> 
 
-When doing a reconstruction, the same enocded coefficients can be used to do a continuous reconstruction for different densities.
+When doing a reconstruction, the same encoded coefficients can be used for continuous reconstruction for different densities.
 
 ## Complie and Run Example
 ### Dependencies
@@ -23,7 +23,7 @@ When doing a reconstruction, the same enocded coefficients can be used to do a c
 - Computer Vision Toolbox
 - Statistics and Machine Learning Toolbox
 
-**[libigl](https://libigl.github.io/)**, and **[Eigen](https://eigen.tuxfamily.org/index.php?title=Main_Page)>=3.4.0** (These libraries will be automatcally download and complied in later procedure)
+**[libigl](https://libigl.github.io/)**, and **[Eigen](https://eigen.tuxfamily.org/index.php?title=Main_Page)>=3.4.0** (These libraries will be automatically downloaded and complied in later procedure)
 ### Install tools
 ```
 sudo apt update
@@ -48,14 +48,14 @@ matlab .
 Execute [KITTI_example.mlx](matlab/KITTI_example.mlx) to start a quick tutorial.
 ## Datasets
 ### [KITTI](http://www.cvlibs.net/datasets/kitti/)
-The officical KITTI dataset is in binary, but we provide the pcd format to download which can use directly.
+The official KITTI dataset is in binary, but we provide the pcd format to download which can use directly.
 
 ### [The Newer College](https://ori-drs.github.io/newer-college-dataset/)
-This dataset provide a ground truth point cloud which can be used for continuous reconstruction evaluation. And we further use ICP to correct the transformation between Ouster-Scans and the ground truth point cloud.
+This dataset provides 64-channel LiDAR point clouds using an Ouster OS-1 (Gen 1)
+64, and a ground truth point cloud got from Leica BLK360 which can be used for continuous reconstruction evaluation. And we used ICP to correct further the transformation between Ouster-Scans and the ground truth point cloud.
 
 ### [INDOOR LIDAR-RGBD SCAN DATASET](http://redwood-data.org/indoor_lidar_rgbd/)
-Because this dataset only have dense point cloud collected using FARO Focus 3D X330 HDR scanner, therefore, we sampled points from the dense point cloud using the parameter of Ouster OS-1 (Gen 1)
-64 as the input to test CURL.
+Because this dataset only has dense point clouds collected using FARO Focus 3D X330 HDR scanner, therefore, we sampled 64-channel points from the dense point cloud using the parameter of Ouster OS-1 (Gen 1) 64 as the input to test CURL.
 
 ### [Download](https://www.dropbox.com/sh/0e4gc7unim69f1j/AABNqAC-_VGDOUjInC-Vt3gQa?dl=0)
 Please save these files under folder [example_data](example_data).
@@ -65,14 +65,14 @@ Please save these files under folder [example_data](example_data).
 <p align="center">
 <img src="./images/FirstFigure.png" alt="FirstFigure" width=80%/>
 </p> 
-Left to Right: original point cloud (red), point clouds reconstructed using a same CURL with 2 times (blue) and 7 times (green) density increases. The CURL of this point cloud is only 16% of the original point cloud size.
+Left to Right: original point cloud (red), point clouds reconstructed using the same CURL with 2 times (blue) and 7 times (green) density increases. The CURL of this point cloud is only 16% of the original point cloud size.
 
 ### 2. Newer College
 #### 1:1 Reconstruction
 <p align="center">
 <img src="images/1_1College.gif" alt="1:1 Newer College" width=80%/>
 </p> 
-We have specific parameters for 1:1 reconstruction task if a very high precision is required (Continuous reconstruction result would be terrible).
+We have specific parameters for the 1:1 reconstruction task if very high precision is required (Continuous reconstruction results would be terrible).
 
 #### CURL Map
 <p align="center">

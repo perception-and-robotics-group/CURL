@@ -12,7 +12,7 @@ if [ ! -d $FILE_eigen ]; then
 fi
 FILE_mex=/usr/local/bin/mex
 if [ ! -f $FILE_mex ]; then
-    mex_file=$(find / -name "mex" | grep "bin/mex" )
+    mex_file=$(find / -name "mex" | grep "bin/mex")
     if (( $(echo "${mex_file}" | grep -c "mex") > 0 )); then
         mex_file_1=$(echo "${mex_file}" | head -1)
         ln -s $mex_file_1 $FILE_mex
