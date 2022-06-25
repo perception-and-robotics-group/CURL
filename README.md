@@ -23,7 +23,7 @@ When doing a reconstruction, the same encoded coefficients can be used for conti
 - Computer Vision Toolbox
 - Statistics and Machine Learning Toolbox
 
-**[libigl](https://libigl.github.io/)**, and **[Eigen](https://eigen.tuxfamily.org/index.php?title=Main_Page)>=3.4.0** (These libraries will be automatically downloaded and complied in later procedure)
+**[libigl](https://libigl.github.io/)**, and **[Eigen](https://eigen.tuxfamily.org/index.php?title=Main_Page)>=3.4.0** (These libraries will be automatically downloaded and compiled in later procedures)
 ### Install tools
 ```
 sudo apt update
