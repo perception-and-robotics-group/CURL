@@ -15,7 +15,7 @@ We designed a framework that can compress and increase the LiDAR point cloud at 
 
 When doing a reconstruction, the same encoded coefficients can be used for continuous reconstruction for different densities.
 
-## Complie and Run Example
+## Complie and Run an Example
 ### Dependencies
 **C++17**
 
