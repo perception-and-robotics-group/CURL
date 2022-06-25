@@ -40,7 +40,7 @@ sudo ./mex_compilation.sh
 ```
 If compilation failed with the error ``‘Eigen::all’ is predetermined ‘shared’ for ‘shared’``, then delete ``Eigen::all`` from [CURL_Extraction_mex.h](include/cpp/include/CURL_Extraction_mex.h) line 361 and 648, and [CURL_Reconstruction_mex.h](include/cpp/include/CURL_Reconstruction_mex.h) line 71. This error is related to the version of gcc.
 
-### Run a example
+### Run an example
 ```
 cd matlab
 matlab .
