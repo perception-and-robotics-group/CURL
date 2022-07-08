@@ -90,11 +90,14 @@ Using the CURL method by increasing the density of the point cloud and merging t
 For more information, please read our [paper](https://arxiv.org/abs/2205.06059#:~:text=Increasing%20the%20density%20of%20the,(e.g.%2C%20128%20channels).).
 ## Citation
 ```
-@article{zhang2022curl,
-  title={CURL: Continuous, Ultra-compact Representation for LiDAR},
-  author={Zhang, Kaicheng and Hong, Ziyang and Xu, Shida and Wang, Sen},
-  journal={Robotics: Science and Systems (RSS)},
-  year={2022}
+@INPROCEEDINGS{Zhang-RSS-22, 
+    AUTHOR    = {Kaicheng Zhang AND Ziyang Hong AND Shida Xu AND Sen Wang}, 
+    TITLE     = {{CURL: Continuous, Ultra-compact Representation for LiDAR}}, 
+    BOOKTITLE = {Proceedings of Robotics: Science and Systems}, 
+    YEAR      = {2022}, 
+    ADDRESS   = {New York City, NY, USA}, 
+    MONTH     = {June}, 
+    DOI       = {10.15607/RSS.2022.XVIII.005} 
 }
 ```
 ## Acknowledgments
