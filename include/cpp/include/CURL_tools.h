@@ -153,7 +153,7 @@ void assocLegendre(int l, Eigen::VectorXd X, Eigen::MatrixXd &P) {
 //#pragma omp parallel for num_threads(omp_get_num_procs()) default(none) shared(l, X, P)
     for (int i = 0; i < X.size(); i++) {
         for (int m = 0; m <= l; m++) {
-            P(m, i) = std::assoc_legendre(l, m, X(i));
+            P(m, i) = pow(-1, m) * std::assoc_legendre(l, m, X(i));
         }
     }
 }
