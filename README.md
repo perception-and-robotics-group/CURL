@@ -1,5 +1,7 @@
 # CURL: Continuous, Ultra-compact Representation for LiDAR
 
+**Code moves to our new repository: https://github.com/SenseRoboticsLab/CURL.git**
+
 **This is a repository of CURL which can continuously improve the density of the LiDAR point cloud and reduce the storage size at the same time.**
 
 ## System Architecture
